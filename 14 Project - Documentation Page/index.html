@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Web Development Basics</header>
+        <ul>
+            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#HTML" class="nav-link">HTML</a></li>
+            <li><a href="#CSS" class="nav-link">CSS</a></li>
+            <li><a href="#JavaScript" class="nav-link">JavaScript</a></li>
+            <li><a href="#React" class="nav-link">React</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Web development is a dynamic field that involves the creation and maintenance of websites and web applications. Whether you're building a simple personal blog or a complex e-commerce platform, understanding the basics of web development is crucial. This documentation is designed to guide you through the foundational concepts that every aspiring web developer should know. We'll cover key topics such as HTML, CSS, JavaScript, and React, providing you with the essential knowledge to get started on your web development journey.</p>
+            <p>Throughout this page, you'll find explanations, code snippets, and examples to help you grasp the core ideas behind these technologies. Whether you're a complete beginner or someone looking to refresh your knowledge, this documentation will serve as a valuable resource. As you explore each section, you'll gain insights into how these technologies work together to create functional and visually appealing web pages.</p>
+            <p>In this documentation, you will learn:</p>
+            <ul>
+                <li>The role of HTML in structuring web content.</li>
+                <li>How CSS is used to style and layout web pages.</li>
+                <li>The basics of JavaScript for adding interactivity to your site.</li>
+                <li>An introduction to React for building user interfaces.</li>
+            </ul>
+            <p>By the end of this guide, you'll have a solid understanding of the basics of web development and be equipped with the skills to start building your own projects.</p>
+        </section>
+
+        <section class="main-section" id="HTML">
+            <header>HTML</header>
+            <p>Hypertext Markup Language (HTML) is the standard language used to create and structure content on the web. It forms the backbone of any web page, defining elements like headings, paragraphs, links, images, and more. By using a system of tags and attributes, HTML allows developers to create a structured document that browsers can interpret and display to users.</p>
+            <p>Key Concepts of HTML:</p>
+            <ul>
+                <li>HTML documents start with a &lt;!DOCTYPE html&gt; declaration, which defines the document type</li>
+                <li>The basic structure of an HTML document includes the &lt;html&gt;, &lt;head&gt;, and &lt;body&gt; tags.</li>
+                <li>HTML elements can be nested within each other to create complex layouts.</li>
+            </ul>
+            <p>HTML is not a programming language but a markup language, meaning it describes the structure of content rather than the logic of how it behaves. Each element in an HTML document is represented by a tag, typically consisting of an opening tag, content, and a closing tag.</p>
+            <code>
+                
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang=&quot;en&quot;&gt;<br>
+                    &nbsp;&nbsp;&lt;head&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset=&quot;UTF-8&quot;&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Sample HTML Document&lt;/title&gt;<br>
+                    &nbsp;&nbsp;&lt;/head&gt;<br>
+                    &nbsp;&nbsp;&lt;body&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Welcome to Web Development&lt;/h1&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph of text on a web page.&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;https://www.example.com&quot;&gt;Visit Example&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&lt;/body&gt;<br>
+                    &lt;/html&gt;
+                   
+                    
+                </code>
+            
+        </section>
+
+        <section class="main-section" id="CSS">
+            <header>CSS</header>
+            <p>Cascading Style Sheets (CSS) is a stylesheet language used to control the presentation of HTML content. While HTML provides the structure of a web page, CSS is responsible for the visual appearance, including layout, colors, fonts, and spacing. By separating the content from its presentation, CSS allows developers to maintain and update the look and feel of a website more efficiently.</p>
+            
+            <p>CSS works by selecting HTML elements and applying styles to them. These styles can be applied inline within HTML, embedded in the <head> section of an HTML document, or, more commonly, linked from an external stylesheet. CSS rules consist of selectors and declarations; selectors target specific HTML elements, and declarations define the style properties to be applied, such as color, font-size, and margin.</p>
+            <p>Key Features of CSS:</p>
+                <ul>
+                <li>CSS allows for responsive design, enabling web pages to adapt to different screen sizes.</li>
+                <li>Styles can be reused across multiple pages, promoting consistency and reducing redundancy.</li>
+                <li>CSS provides powerful tools for layout, including Flexbox and Grid, which help create complex, flexible designs.</li>
+            </ul>
+            <code>
+                body {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;background-color: #f0f0f0;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;font-family: Arial, sans-serif;<br>
+                }<br><br>
+                h1 {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;color: #333;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
+                }<br><br>
+                p {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;color: #666;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;line-height: 1.6;<br>
+                }                
+                </code>
+        </section>
+
+        <section class="main-section" id="JavaScript">
+            <header>JavaScript</header>
+            <p>JavaScript is a powerful scripting language that enables developers to add interactivity and dynamic behavior to web pages. Unlike HTML and CSS, which are used to structure and style content, JavaScript allows you to create engaging user experiences by responding to user inputs, manipulating the Document Object Model (DOM), and handling events like clicks or key presses. It's a core technology of the web, along with HTML and CSS, and is essential for modern web development.</p>
+            <p>
+                Here's the content for the JavaScript section:
+                
+                JavaScript
+                JavaScript is a powerful scripting language that enables developers to add interactivity and dynamic behavior to web pages. Unlike HTML and CSS, which are used to structure and style content, JavaScript allows you to create engaging user experiences by responding to user inputs, manipulating the Document Object Model (DOM), and handling events like clicks or key presses. It's a core technology of the web, along with HTML and CSS, and is essential for modern web development.
+                
+                JavaScript can be embedded directly in HTML documents or included as an external file. It is executed by the user's browser, making it a client-side language, though it can also be used on the server side with technologies like Node.js. With JavaScript, you can create everything from simple animations to complex web applications, making it a versatile tool in the developer's toolkit.</p>
+                <p>Key Features of JavaScript:</p>
+            <ul>
+                <li>JavaScript is event-driven, meaning it can react to user actions like clicks or form submissions.</li>
+                <li>It supports various data types, including strings, numbers, and arrays, allowing for complex data manipulation.</li>
+                <li>JavaScript can interact with APIs to fetch data from servers, enabling dynamic content updates.</li>
+            </ul>
+            <code>document.addEventListener(&#39;DOMContentLoaded&#39;, function() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;const button = document.querySelector(&#39;button&#39;);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;button.addEventListener(&#39;click&#39;, function() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;Button clicked!&#39;);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;});<br>
+                });</code>
+        </section>
+
+        <section class="main-section" id="React">
+            <header>React</header>
+            <p>React is a popular JavaScript library developed by Facebook for building user interfaces, particularly single-page applications where the user experience is smooth and dynamic. React focuses on creating reusable components, which are self-contained pieces of UI that can be combined to build complex interfaces. This component-based architecture allows developers to build scalable applications where each part of the UI can be independently developed, tested, and maintained.</p>
+            <code>function Greeting() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return &lt;h1&gt;Hello, React!&lt;/h1&gt;;<br>
+                }</code>
+            <p>One of React's key features is its virtual DOM, which improves performance by minimizing direct manipulations of the actual DOM. Instead of updating the entire page, React updates only the components that have changed, leading to faster rendering and a more responsive user experience. Additionally, React embraces a declarative programming style, where developers describe what the UI should look like for any given state, and React takes care of updating the DOM to match.</p>
+            <p>Key Features of React:</p>
+            <ul>
+                <li>Component-Based Architecture: Breaks down the UI into small, reusable components.</li>
+                <li>Virtual DOM: Enhances performance by efficiently updating only parts of the UI that change.</li>
+                <li>JSX Syntax: Allows developers to write HTML-like code within JavaScript, making it easier to create and manage UI components.</li>
+            </ul>
+            <code>import React from &#39;react&#39;;<br><br>
+                function WelcomeMessage() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return (<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello, World!&lt;/h1&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Welcome to learning React.&lt;/p&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;);<br>
+                }<br><br>
+                export default WelcomeMessage;</code>
+        </section>
+    </main>
+</body>
+</html>

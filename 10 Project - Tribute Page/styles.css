@@ -1,0 +1,57 @@
+#image {
+    max-width: 100%;
+    margin: auto;
+    height: auto;
+    justify-content: center;
+    display: block;
+}
+
+#title {
+    text-align: center;
+}
+
+#main {
+    text-align: center;
+    background-color: rgb(205, 211, 240);
+    border-radius: 5px;
+    background-attachment: scroll;
+    padding: 15px;
+    margin: 30px 8px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#img-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+    background-color: white;
+}
+
+
+
+#img-caption {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#tribute-link {
+    color: rgb(77, 73, 127);
+}
+
+#tribute-link:hover {
+    color: #9B7753
+}
+
+#tribute-info {
+    margin: 10px auto;
+    padding: 10px;
+    width: 50%;
+    text-align: left;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A comprehensive guide to improving accessibility and SEO on your website with best practices and essential HTML elements.">
+    <title>Learn Accessibility by Building a Quiz</title>
+    <link rel="stylesheet" href="styles.css">nk
+</head>
+
+<body>
+    <header>
+        <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp" id="logo">
+        <h1>HTML/CSS Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="#student-info" accesskey="a">INFO</a></li>
+                <li><a href="#html-questions" accesskey="s">HTML</a></li>
+                <li><a href="#css-questions" accesskey="d">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
+
+            <section role="region" aria-labelledby="student-info">
+                <h2 id="student-info">student info</h2>
+
+                <div class="info">
+                    <label for="student-name">Name:</label>
+                    <input id="student-name" type="text" name="student-name" placeholder="Enter your full name" />
+                </div>
+
+                <div class="info">
+                    <label for="student-email">Email:</label>
+                    <input id="student-email" type="email" name="student-email" />
+                </div>
+
+                <div class="info">
+                    <label for="birth-date">Date of Birth:</label>
+                    <input id="birth-date" type="date" name="student-date-birth" />
+            </section>
+
+            <section role="region" aria-labelledby="html-questions">
+                <h2 id="html-questions">HTML questions</h2>
+                <div class="question-block">
+                    <h3><span class="sr-only">Question</span>1</h3>
+                    <fieldset class="question" name="question-1">
+                        <legend>Is this getting confusing?</legend>
+                        <ul class="answers-list">
+                            <li><label for="q1-a1"><input type="radio" id="q1-a1" value="true" name="q1">true</label>
+                            </li>
+                            <li><label for="q1-a2"><input type="radio" id="q1-a2" value="false" name="q1">false</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+
+                <div class="question-block">
+                    <h3><span class="sr-only">Question</span>2</h3>
+                    <fieldset class="question" name="question-2">
+                        <legend>is backend better?</legend>
+                        <ul class="answers-list">
+                            <li><label for="q2-a1"><input type="radio" id="q2-a1" value="false"
+                                        name="q2">false</label>Option 1</li>
+                            <li><label for="q2-a2"><input type="radio" id="q2-a2" value="true"
+                                        name="q2">true</label>Option 2</li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </section>
+
+            <section role="region" aria-labelledby="css-questions">
+                <h2 id="css-questions">CSS questions</h2>
+                <div class="formrow">
+                    <div class="question-block">
+                        <label for="margin-negative">Is CSS scary?</label>
+                    </div>
+
+                    <div class="answer">
+                        <select name="margin-negative" id="" required>
+                            <option value="">Select an Option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <div class="question-block">
+                        <label for="any-question">Do you prefer Backend?</label>
+                    </div>
+
+                    <div class="answer">
+                        <textarea name="any-question" id="any-question" rows="5" cols="24"></textarea>
+                    </div>
+                </div>
+            </section>
+            <button type="submit">Send</button>
+        </form>
+    </main>
+    <footer>
+        <address>
+            <a href="https://freecodecamp.org">freeCodeCamp</a> <br />
+            San Francisco<br />
+            California<br />
+            USA
+        </address>
+    </footer>
+</body>
+
+</html>
